@@ -101,15 +101,15 @@ If you'd like to download the JDK on your computer and choose:
 
 - [x] Plan out how the UI will look (Include pictures)
 - [x] Plan out how to API will receive and send data from/to the client (Include pictures)
-- [] Create two pages:
-  - [] Home page
-  - [] List View page
-- [] Validate form data (Requires basic validation may go with HTML5 validation)
-- [] Create the REST API and endpoints
-  - [] Create the model for the support request
-  - [] Use In memory DB as it's a simple application (Use JPA or Hibernate as ORM)
-  - [] Create controller for handling endpoints
-  - [] Although validation happens on frontend also include validation on backend
+- [x] Create two pages:
+  - [x] Home page
+  - [x] List View page
+- [x] Validate form data (Requires basic validation may go with HTML5 validation)
+- [x] Create the REST API and endpoints
+  - [x] Create the model for the support request
+  - [x] Use In memory DB as it's a simple application (Use JPA or Hibernate as ORM)
+  - [x] Create controller for handling endpoints
+  - [x] Although validation happens on frontend also include validation on backend
 - [] Make the UI pretty
 - [] Complete documentation
 

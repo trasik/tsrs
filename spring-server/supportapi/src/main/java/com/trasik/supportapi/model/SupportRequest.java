@@ -7,7 +7,6 @@ import jakarta.validation.constraints.*;
 import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 @Entity
 @Table(name = "supportrequest")
@@ -17,6 +16,9 @@ public class SupportRequest {
     @Id
     @GeneratedValue
     private int requestID;
+
+    // All Constraints have been checked with the use of Spring Boot Validation & Jakarta modules
+    // No need for extensive checks
 
     @Email(message = "Invalid email address.")
     @Size(max = 320, message = "Email address cannot exceed 320 characters.")

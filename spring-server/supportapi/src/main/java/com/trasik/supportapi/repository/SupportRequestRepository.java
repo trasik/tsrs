@@ -8,5 +8,6 @@ import java.util.List;
 
 public interface SupportRequestRepository extends JpaRepository<SupportRequest, Integer> {
 
+    // Uses JPA functionality to find all requests and order them by the due date column
     public List<SupportRequest> findAllByOrderByDueDateAsc();
 }

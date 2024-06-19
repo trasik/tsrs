@@ -17,16 +17,20 @@ public class SupportRequestController {
     @Autowired
     private SupportRequestService supportRequestService;
 
+    // Takes in a request parameter to check which data should be returned
     @GetMapping("supportrequests")
     @ResponseStatus(HttpStatus.OK)
-    private List<SupportRequest> getAllRequests() {
-        return supportRequestService.getAllSupportRequests();
-    }
-
-    @GetMapping("supportrequests/order")
-    @ResponseStatus(HttpStatus.OK)
-    private List<SupportRequest> getAllRequests2() {
-        return supportRequestService.getAllSupportRequestsOrderByDateAsc();
+    private List<SupportRequest> getAllRequests(@RequestParam String option) {
+        //If the selection from the client is relevant, just get all requests
+        if(option.equals("relevant")) {
+            return supportRequestService.getAllSupportRequests();
+        // Else if the option is earliestDueDate then return the requests ordered by due date
+        } else if(option.equals("earliestDueDate")) {
+            return supportRequestService.getAllSupportRequestsOrderByDateAsc();
+        } else {
+        // If an unknown option is given then just return all requests
+            return supportRequestService.getAllSupportRequests();
+        }
     }
 
     @PostMapping("supportrequests/add")

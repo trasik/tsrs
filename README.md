@@ -97,6 +97,12 @@ If you'd like to download the JDK on your computer and choose:
 
 <a href="https://learn.microsoft.com/en-us/java/openjdk/download">Microsoft OpenJDK</a>
 
+Run the Spring Boot Application by building and running the main method in:
+
+```
+SupportAPIApplication
+```
+
 #### H2 Database Console
 
 To login into the H2 console navigation to:

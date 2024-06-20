@@ -29,6 +29,7 @@
     <li><a href="#installation">Installation</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#design">Design</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -47,6 +48,7 @@ It will be a full stack application to demonstrate all aspects of data movement.
 - [![Java][Java]][Java-url]
 - [![Springboot][Springboot]][Springboot-url]
 - [![Svelte][Svelte]][Svelte-url]
+- [![TailwindCSS][TailwindCSS]][TailwindCSS-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +86,7 @@ npm run dev -- --open
 
 ### Backend/Server Installation/Usage
 
-<p><strong>Prerequisites:</strong> Must have Java and some sort of JDK installed preferably 17</p>
+<p><strong>Prerequisites:</strong> Must have Java and some sort of JDK installed (Application built/runs with version 22)</p>
 
 <a href="https://www.java.com/en/download/">Java</a>
 <br />
@@ -94,6 +96,18 @@ If you are using an IDE like IntelliJ, You can let it download and choose which 
 If you'd like to download the JDK on your computer and choose:
 
 <a href="https://learn.microsoft.com/en-us/java/openjdk/download">Microsoft OpenJDK</a>
+
+#### H2 Database Console
+
+To login into the H2 console navigation to:
+
+```
+http://localhost:8080/h2-console
+
+JDBC URL: jdbc:h2:./data/supportdb
+User Name: sa
+Password: password
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,7 +124,7 @@ If you'd like to download the JDK on your computer and choose:
   - [x] Use In memory DB as it's a simple application (Use JPA or Hibernate as ORM)
   - [x] Create controller for handling endpoints
   - [x] Although validation happens on frontend also include validation on backend
-- [] Make the UI pretty
+- [x] Make the UI pretty
 - [] Complete documentation
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -123,13 +137,30 @@ If you'd like to download the JDK on your computer and choose:
 
 <img src="./images/HomeView.png" alt="Home View"/>
 
+#### Home View Completed
+
+<img src="./images/FinishedHomeView.png" alt="Finished Home View"/>
+
 #### List View
 
 <img src="./images/RequestListView.png" alt="Request List View" />
 
+#### List View Completed
+
+<img src="./images/FinishedRequestListView.png" alt="Finished Request List View" />
+
 ### API Design
 
 <img src="./images/APIDesign.png" alt="API Design" />
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Acknowledgements
+
+- <a href="https://github.com/svecosystem/mode-watcher">SvelteKit Mode-Watcher</a>
+- <a href="https://www.svgrepo.com/">SVG Repo</a>
+- <a href="https://unsplash.com/">Unsplash</a>
+- <a href="https://www.baeldung.com/spring-mvc-custom-validator">Spring Boot Custom Validator</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,3 +170,5 @@ If you'd like to download the JDK on your computer and choose:
 [Springboot-url]: https://spring.io/projects/spring-boot
 [Svelte]: https://img.shields.io/static/v1?logo=svelte&label=&message=svelte&&color=white&style=for-the-badge
 [Svelte-url]: https://svelte.dev/
+[TailwindCSS]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white
+[TailwindCSS-url]: https://tailwindcss.com/

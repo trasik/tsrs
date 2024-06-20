@@ -10,7 +10,7 @@
   <p align="center">
     An README file for the application describing plans and structure.
     <br />
-    <a href="https://github.com/trasik/trasik98"><strong>Explore the repo »</strong></a>
+    <a href="https://github.com/trasik/tsrs"><strong>Explore the repo »</strong></a>
     <br />
   </p>
 </div>
@@ -125,7 +125,7 @@ Password: password
   - [x] Create controller for handling endpoints
   - [x] Although validation happens on frontend also include validation on backend
 - [x] Make the UI pretty
-- [] Complete documentation
+- [x] Complete documentation
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

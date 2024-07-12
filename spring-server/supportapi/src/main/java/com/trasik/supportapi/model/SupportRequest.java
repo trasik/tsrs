@@ -4,6 +4,7 @@ import com.trasik.supportapi.utils.IsBeforeAYear;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
+import org.hibernate.validator.constraints.UniqueElements;
 import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDate;

@@ -5,6 +5,7 @@ import com.trasik.supportapi.service.SupportRequestService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,7 +36,7 @@ public class SupportRequestController {
 
     @PostMapping("supportrequests/add")
     @ResponseStatus(HttpStatus.CREATED)
-    private SupportRequest createAndSaveRequest(@Valid @RequestBody SupportRequest sr) {
+    private ResponseEntity<String> createAndSaveRequest(@Valid @RequestBody SupportRequest sr) {
         return supportRequestService.saveSupportRequest(sr);
     }
 

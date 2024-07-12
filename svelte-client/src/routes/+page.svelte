@@ -29,7 +29,7 @@
 			}
 		});
 
-		responseData = await response.json();
+		responseData = await response.text();
 
 		if (response.status == 201) {
 			success = true;
@@ -126,13 +126,7 @@
 						class="absolute mt-1 bg-green-300 dark:bg-green-600 w-10/12 h-auto rounded-xl overflow-hidden"
 					>
 						<p class="flex text-xl font-bold p-2 justify-center">Success</p>
-						<p class="px-2"><span class="font-bold pr-8">Email: </span>{responseData.email}</p>
-						<p class="p-2 text-wrap">
-							<span class="font-bold pr-8">Description: </span>{responseData.description}
-						</p>
-						<p class="px-2 pb-2">
-							<span class="font-bold pr-8">Due Date: </span>{responseData.dueDate}
-						</p>
+						<p class="px-2 py-2"><span class="font-bold pr-8">Message: </span>{responseData}</p>
 					</div>
 				</div>
 			{:else if error}
@@ -141,8 +135,7 @@
 					transition:fly={{ delay: 250, duration: 1500, x: 300, opacity: 0, easing: quintOut }}
 				>
 					<div class="absolute mt-1 bg-red-300 dark:bg-red-600 w-10/12 h-[100px] rounded-xl">
-						<p class="flex text-lg font-medium p-2 justify-center">Error: {responseData.error}</p>
-						<p class="text-base px-2 text-center">{responseData.errors[0].defaultMessage}</p>
+						<p class="flex text-lg font-medium p-2 justify-center">Error: {responseData}</p>
 					</div>
 				</div>
 			{/if}
